@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Qwigley&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f4f2f0;
+  font-family: "DM Sans", sans-serif;
+  color: #121110;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  color: #121110;
+}
+
+section {
+  padding-block: 4.375rem;
+  margin-top: 64px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="radio"] {
+  accent-color: #121110;
+}
+
+.leaflet-control {
+  z-index: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 0 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0 !important;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-block: 5.125rem;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-block: 9.375rem;
+  }
+}
